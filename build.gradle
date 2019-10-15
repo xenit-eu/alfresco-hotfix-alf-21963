@@ -1,0 +1,20 @@
+plugins {
+    id 'eu.xenit.alfresco' version "1.0.0"
+    id 'eu.xenit.amp' version "1.0.0"
+}
+
+group = "eu.xenit.alfresco"
+description = "Hotfix for ALF-21963, the issue that puts backslashes in workflow urls"
+version = "0.1.0"
+
+ext.alfrescoVersion = "5.1.e"
+
+repositories {
+    mavenCentral()
+    jcenter()
+    alfrescoPublic()
+}
+
+dependencies {
+    alfrescoProvided "org.alfresco:alfresco-repository:${alfrescoVersion}"
+}
